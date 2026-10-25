@@ -1,0 +1,25 @@
+name: GlazeStudio
+options:
+  bundleIdPrefix: dev.crossprojecttextures
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  GlazeStudio:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.crossprojecttextures.glazestudio
+        PRODUCT_NAME: GlazeStudio
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        SWIFT_VERSION: 5.0
+schemes:
+  GlazeStudio:
+    build:
+      targets:
+        GlazeStudio: all
+    run:
+      config: Debug
